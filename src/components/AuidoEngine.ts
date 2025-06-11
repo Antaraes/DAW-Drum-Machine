@@ -1,7 +1,6 @@
 export class AudioEngine {
   private context: AudioContext | null = null;
   private buffers: Map<string, AudioBuffer> = new Map();
-  private gains: Map<string, GainNode> = new Map();
 
   async initialize(): Promise<void> {
     if (!this.context) {
